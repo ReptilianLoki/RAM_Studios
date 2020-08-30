@@ -16,6 +16,7 @@
     {"id":{"name":"player_jump_state","path":"scripts/player_jump_state/player_jump_state.yy",},"order":18,},
     {"id":{"name":"sc_check_ground","path":"scripts/sc_check_ground/sc_check_ground.yy",},"order":23,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":9,},
+    {"id":{"name":"s_dirt","path":"sprites/s_dirt/s_dirt.yy",},"order":15,},
     {"id":{"name":"sc_change_image","path":"scripts/sc_change_image/sc_change_image.yy",},"order":22,},
     {"id":{"name":"sc_macros","path":"scripts/sc_macros/sc_macros.yy",},"order":9,},
     {"id":{"name":"player_block_state","path":"scripts/player_block_state/player_block_state.yy",},"order":12,},
