@@ -17,15 +17,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_tree_small","path":"objects/o_tree_small/o_tree_small.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_tree_small","path":"objects/o_tree_small/o_tree_small.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "MAIN",
+    "path": "folders/Objects/Top_Down/MAIN.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Object1",
+  "name": "o_tree_small",
   "tags": [],
   "resourceType": "GMObject",
 }
