@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Side_Scroll",
-    "path": "folders/Scripts/Side_Scroll.yy",
+    "name": "Top_Down",
+    "path": "folders/Scripts/Top_Down.yy",
   },
   "resourceVersion": "1.0",
-  "name": "anim",
+  "name": "sc_dialouge_responses",
   "tags": [],
   "resourceType": "GMScript",
 }

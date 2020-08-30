@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Side_Scroll.yy",
   },
   "resourceVersion": "1.0",
-  "name": "anim",
+  "name": "get_input",
   "tags": [],
   "resourceType": "GMScript",
 }

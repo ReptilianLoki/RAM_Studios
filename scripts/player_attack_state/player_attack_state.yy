@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Side_Scroll.yy",
   },
   "resourceVersion": "1.0",
-  "name": "anim",
+  "name": "player_attack_state",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Side_Scroll",
+    "path": "folders/Scripts/Side_Scroll.yy",
   },
   "resourceVersion": "1.0",
   "name": "player_crouch_block_state",
