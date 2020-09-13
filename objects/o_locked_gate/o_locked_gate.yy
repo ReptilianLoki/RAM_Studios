@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_locked_gate",
+    "path": "sprites/s_locked_gate/s_locked_gate.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -26,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MAIN",
-    "path": "folders/Objects/Top_Down/MAIN.yy",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Objects/MAIN.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_locked_gate",

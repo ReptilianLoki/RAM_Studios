@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c5ede78e-7361-4cf1-99ee-398f016d92d0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Top_down",
-    "path": "folders/Sprites/Top_down.yy",
+    "name": "Sprites",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_solid",

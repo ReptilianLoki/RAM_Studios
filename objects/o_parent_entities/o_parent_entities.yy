@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "META OBJECTS",
-    "path": "folders/Objects/Top_Down/META OBJECTS.yy",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Objects/META OBJECTS.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_parent_entities",

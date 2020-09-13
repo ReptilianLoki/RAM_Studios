@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_player_dust",
+    "path": "sprites/s_player_dust/s_player_dust.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -26,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MAIN",
-    "path": "folders/Objects/Top_Down/MAIN.yy",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Objects/MAIN.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_player_dust",

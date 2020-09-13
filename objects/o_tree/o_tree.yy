@@ -1,8 +1,14 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_tree",
+    "path": "sprites/s_tree/s_tree.yy",
+  },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_tree",
+    "path": "sprites/s_tree/s_tree.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -25,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MAIN",
-    "path": "folders/Objects/Top_Down/MAIN.yy",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Objects/MAIN.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_tree",

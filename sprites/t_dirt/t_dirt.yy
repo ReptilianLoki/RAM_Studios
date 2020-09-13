@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eee24f61-1457-4e92-8fdd-87cd0a33f65d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Top_Down",
-    "path": "folders/Tile Sets/Top_Down.yy",
+    "name": "Tile Sets",
+    "path": "folders/Side Scroll Assets/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
   "name": "t_dirt",

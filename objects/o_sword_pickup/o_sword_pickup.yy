@@ -1,8 +1,14 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_sword",
+    "path": "sprites/s_sword/s_sword.yy",
+  },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_sword",
+    "path": "sprites/s_sword/s_sword.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -24,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MAIN",
-    "path": "folders/Objects/Top_Down/MAIN.yy",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Objects/MAIN.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_sword_pickup",

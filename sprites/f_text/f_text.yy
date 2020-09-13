@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"72e89044-d7b4-4c46-883e-ee6ebe6995dd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Top_down",
-    "path": "folders/Sprites/Top_down.yy",
+    "name": "Fonts",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "f_text",

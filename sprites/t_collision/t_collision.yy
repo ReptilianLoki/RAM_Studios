@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"37f08ac1-5ce6-49e2-a6ed-9be729e4b81b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Top_Down",
-    "path": "folders/Tile Sets/Top_Down.yy",
+    "name": "Tile Sets",
+    "path": "folders/Side Scroll Assets/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
   "name": "t_collision",

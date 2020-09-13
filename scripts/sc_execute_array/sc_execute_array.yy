@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Top_Down",
-    "path": "folders/Scripts/Top_Down.yy",
+    "name": "Scripts",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "sc_execute_array",

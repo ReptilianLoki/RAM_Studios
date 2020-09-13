@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e2e6df7e-9cb4-4a30-88cb-9b208182c626","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Side_Scroll",
-    "path": "folders/Sprites/Side_Scroll.yy",
+    "name": "Sprites",
+    "path": "folders/Side Scroll Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_dirt_tileset",

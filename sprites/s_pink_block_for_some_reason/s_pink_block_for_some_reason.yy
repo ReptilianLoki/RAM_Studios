@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f33835e5-0472-4742-b765-17988976cb9b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Top_down",
-    "path": "folders/Sprites/Top_down.yy",
+    "name": "Sprites",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_pink_block_for_some_reason",

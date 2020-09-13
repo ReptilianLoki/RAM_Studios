@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49d1861e-df11-4cad-b6a2-465d20bba715","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Top_down",
-    "path": "folders/Sprites/Top_down.yy",
+    "name": "Sprites",
+    "path": "folders/Side Scroll Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_dirt",

@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Side_Scroll",
-    "path": "folders/Objects/PLAYER/Side_Scroll.yy",
+    "name": "Objects",
+    "path": "folders/Side Scroll Assets/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_player_dust_land",

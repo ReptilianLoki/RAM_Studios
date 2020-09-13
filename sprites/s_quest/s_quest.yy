@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"54cb0493-f1d9-4db3-b6c9-9b625020c3c2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Top_down",
-    "path": "folders/Sprites/Top_down.yy",
+    "name": "Sprites",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_quest",

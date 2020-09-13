@@ -1,8 +1,14 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_penguin_idle",
+    "path": "sprites/s_penguin_idle/s_penguin_idle.yy",
+  },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_penguin_idle",
+    "path": "sprites/s_penguin_idle/s_penguin_idle.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "o_player_parent",
@@ -29,7 +35,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MAIN",
-    "path": "folders/Objects/Top_Down/MAIN.yy",
+    "path": "folders/Side Scroll Assets/Top Down Assets/Objects/MAIN.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_player_top_down",

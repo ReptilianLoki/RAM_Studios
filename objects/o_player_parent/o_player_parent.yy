@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PLAYER",
-    "path": "folders/Objects/PLAYER.yy",
+    "name": "Objects",
+    "path": "folders/Side Scroll Assets/Universal Assets/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_player_parent",
