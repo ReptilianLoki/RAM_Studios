@@ -1,17 +1,38 @@
 /// @description Initialize Player Variables
 
-max_speed = 4;
+//speeds
 hsp = 0;
 vsp = 0;
+max_hsp = 2;
+walk_spd = 1.5;
 hsp_decimal = 0;
 vsp_decimal = 0;
-acceleration = 1;
-gravity_acceleration = .5;
-jump_height = -9
+jump_spd = -6;
+jump_dampner = 3;
+jumps_initial = 2;
+jumps = jumps_initial;
+
+//friction
+drag = .12;
+
+//stretching
+scale_x = 1;
+scale_y = 1;
+scale_min = 0.75;
+scale_max = 1.25;
+scale_decay = 0.2;
+
+//facing direction
+facing = 1;
+
+//player health
+hp = 5;
 
 enum player
 {
+	idle,
 	moving,
+	jump
 }
 
-state = player.moving;
+state = player.idle;

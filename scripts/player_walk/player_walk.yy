@@ -6,7 +6,7 @@
     "path": "folders/Side Scroll Assets/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "apply_friction",
+  "name": "player_walk",
   "tags": [],
   "resourceType": "GMScript",
 }
