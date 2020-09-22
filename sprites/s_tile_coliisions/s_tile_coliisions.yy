@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3aecf2de-25c0-4364-9102-dcf37df38d0b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Side Scroll Assets/Sprites.yy",
+    "name": "Tile_Sprites",
+    "path": "folders/Side Scroll Assets/Sprites/Tile_Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_tile_coliisions",

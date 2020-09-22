@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Side Scroll Assets/Scripts.yy",
+    "name": "Game",
+    "path": "folders/Side Scroll Assets/Scripts/Game.yy",
   },
   "resourceVersion": "1.0",
   "name": "macros",

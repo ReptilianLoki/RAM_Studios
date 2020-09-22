@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Side Scroll Assets/Objects.yy",
+    "name": "Control",
+    "path": "folders/Side Scroll Assets/Objects/Control.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_game",
