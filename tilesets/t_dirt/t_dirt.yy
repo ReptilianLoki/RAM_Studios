@@ -140,7 +140,7 @@
     "path": "folders/Side Scroll Assets/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TileSet2",
+  "name": "t_dirt",
   "tags": [],
   "resourceType": "GMTileSet",
 }

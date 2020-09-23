@@ -90,7 +90,7 @@
     "path": "folders/Side Scroll Assets/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TileSet3",
+  "name": "t_lava",
   "tags": [],
   "resourceType": "GMTileSet",
 }
