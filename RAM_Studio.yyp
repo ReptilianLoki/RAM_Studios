@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"s_death","path":"sprites/s_death/s_death.yy",},"order":3,},
     {"id":{"name":"calc_movement","path":"scripts/calc_movement/calc_movement.yy",},"order":0,},
     {"id":{"name":"player_walk","path":"scripts/player_walk/player_walk.yy",},"order":5,},
     {"id":{"name":"player_jump","path":"scripts/player_jump/player_jump.yy",},"order":4,},
@@ -10,9 +11,11 @@
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":0,},
     {"id":{"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},"order":0,},
     {"id":{"name":"o_game","path":"objects/o_game/o_game.yy",},"order":0,},
+    {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"order":1,},
     {"id":{"name":"s_player_idle","path":"sprites/s_player_idle/s_player_idle.yy",},"order":0,},
     {"id":{"name":"on_ground","path":"scripts/on_ground/on_ground.yy",},"order":1,},
     {"id":{"name":"jumped","path":"scripts/jumped/jumped.yy",},"order":2,},
+    {"id":{"name":"TileSet3","path":"tilesets/TileSet3/TileSet3.yy",},"order":2,},
     {"id":{"name":"player_idle","path":"scripts/player_idle/player_idle.yy",},"order":3,},
     {"id":{"name":"s_tile_coliisions","path":"sprites/s_tile_coliisions/s_tile_coliisions.yy",},"order":0,},
   ],

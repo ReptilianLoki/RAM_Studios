@@ -1,5 +1,4 @@
 {
-  "name": "t_collisions",
   "spriteId": {
     "name": "s_tile_coliisions",
     "path": "sprites/s_tile_coliisions/s_tile_coliisions.yy",
@@ -41,6 +40,7 @@
     "path": "folders/Side Scroll Assets/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "t_collisions",
   "tags": [],
   "resourceType": "GMTileSet",
 }
