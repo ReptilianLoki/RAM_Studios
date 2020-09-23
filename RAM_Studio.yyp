@@ -8,6 +8,7 @@
     {"id":{"name":"s_dirt","path":"sprites/s_dirt/s_dirt.yy",},"order":2,},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":0,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":0,},
+    {"id":{"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},"order":0,},
     {"id":{"name":"o_game","path":"objects/o_game/o_game.yy",},"order":0,},
     {"id":{"name":"s_player_idle","path":"sprites/s_player_idle/s_player_idle.yy",},"order":0,},
     {"id":{"name":"on_ground","path":"scripts/on_ground/on_ground.yy",},"order":1,},
@@ -26,7 +27,9 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrder": [],
+  "RoomOrder": [
+    {"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},
+  ],
   "Folders": [
     {"folderPath":"folders/Side Scroll Assets.yy","order":2,"resourceVersion":"1.0","name":"Side Scroll Assets","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Side Scroll Assets/Objects.yy","order":0,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
