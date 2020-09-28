@@ -28,6 +28,9 @@ switch (state)
 	case player.slide:
 	sc_player_slide();
 	break;
+	
+	case player.hook:
+	sc_player_hook();
 }
 #endregion
 

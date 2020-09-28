@@ -34,7 +34,8 @@ enum player
 	idle,
 	moving,
 	jump,
-	slide
+	slide,
+	hook
 }
 
 state = player.idle;
