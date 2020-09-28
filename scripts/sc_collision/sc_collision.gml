@@ -1,5 +1,6 @@
 /// collision();
-function sc_collision() {
+function sc_collision() 
+{
 	//apply carried over decimals
 	hsp += hsp_decimal;
 	vsp += vsp_decimal;
@@ -27,6 +28,7 @@ function sc_collision() {
 		else x = x - (x mod global.tile_size) - (side - x);
 		hsp = 0;
 	}
+	
 	x += hsp;
 
 	//vertical collision
