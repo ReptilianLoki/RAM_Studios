@@ -4,7 +4,8 @@
 hsp = 0;
 vsp = 0;
 max_hsp = 2;
-walk_spd = 1.5;
+max_slide = 4
+walk_spd = 0.5;
 hsp_decimal = 0;
 vsp_decimal = 0;
 jump_spd = -6;
@@ -32,7 +33,8 @@ enum player
 {
 	idle,
 	moving,
-	jump
+	jump,
+	slide
 }
 
 state = player.idle;
