@@ -49,6 +49,7 @@ function sc_collision() {
 		//death tile check
 		if t1 == DEATH or t2 == DEATH or y > room_height {
 			hp = 0;	
+			game_restart();
 		}
 	}
 
