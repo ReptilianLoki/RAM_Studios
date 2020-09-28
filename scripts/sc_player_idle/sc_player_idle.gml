@@ -3,7 +3,7 @@ function sc_player_idle(){
 	sc_calc_movement();
 
 	//check state
-	if(hsp != 0)
+	if (hsp != 0)
 	{
 		state = player.moving;
 	}
