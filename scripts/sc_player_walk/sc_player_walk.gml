@@ -20,6 +20,7 @@ function sc_player_walk()
 	{
 		sc_jumped();
 	}
+
 	
 	if(slide)
 	{

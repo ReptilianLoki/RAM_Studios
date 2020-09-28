@@ -18,6 +18,8 @@ function sc_player_jump() {
 		};
 	}
 	
+	if (place_meeting(x,y,o_hook_block)) state = player.hook;
+	
 	//enable double jumps
 	if jump {
 		sc_jumped();
