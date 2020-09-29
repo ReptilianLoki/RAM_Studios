@@ -33,4 +33,3 @@ switch (state)
 	sc_player_hook();
 }
 #endregion
-

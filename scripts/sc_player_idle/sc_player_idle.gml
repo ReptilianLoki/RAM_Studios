@@ -1,4 +1,8 @@
-function sc_player_idle(){
+function sc_player_idle()
+{
+	//new sprite
+	sprite_index = s_player_idle;
+	
 	//calculate movement
 	sc_calc_movement();
 
@@ -20,4 +24,5 @@ function sc_player_idle(){
 
 	//apply movement
 	sc_collision();
+	
 }

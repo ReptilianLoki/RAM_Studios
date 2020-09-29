@@ -2,6 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function sc_player_walk()
 {
+	//new sprite
+	sprite_index = s_player_walk;
+	
 	//calculate movement
 	sc_calc_movement();
 
@@ -27,6 +30,9 @@ function sc_player_walk()
 		state = player.slide;
 		alarm[0] = room_speed / 8;
 	}
+	
+	//return to idle state when moving stops
+	if (hsp = 0) state = player.idle;
 
 	//apply movement
 	sc_collision();
