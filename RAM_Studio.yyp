@@ -27,7 +27,7 @@
     {"id":{"name":"sc_jumped","path":"scripts/sc_jumped/sc_jumped.yy",},"order":2,},
     {"id":{"name":"t_lava","path":"tilesets/t_lava/t_lava.yy",},"order":2,},
     {"id":{"name":"sc_player_idle","path":"scripts/sc_player_idle/sc_player_idle.yy",},"order":3,},
-    {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},"order":5,},
+    {"id":{"name":"s_snow","path":"sprites/s_snow/s_snow.yy",},"order":5,},
     {"id":{"name":"s_tile_coliisions1","path":"sprites/s_tile_coliisions1/s_tile_coliisions1.yy",},"order":0,},
   ],
   "Options": [
