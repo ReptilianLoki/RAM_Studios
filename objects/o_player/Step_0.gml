@@ -24,7 +24,14 @@ switch (state)
 	case player.jump:
 	sc_player_jump();
 	break;
-	
+	repeat(5)
+	{
+		with (instance_create_layer(x,bbox_bottom,"Instances",oDust))
+		{
+		vsp = 0;
+		}
+		
+	}
 	case player.slide:
 	sc_player_slide();
 	break;
