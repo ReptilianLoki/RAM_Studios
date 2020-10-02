@@ -1,3 +1,7 @@
+
+
+
+
 function sc_player_jump() {
 	
 	//calculate movement
