@@ -1,5 +1,6 @@
 /// collision();
-function sc_collision() {
+function sc_collision() 
+{
 	//apply carried over decimals
 	hsp += hsp_decimal;
 	vsp += vsp_decimal;

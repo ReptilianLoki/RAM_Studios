@@ -4,7 +4,6 @@
     {"id":{"name":"o_snow","path":"objects/o_snow/o_snow.yy",},"order":4,},
     {"id":{"name":"s_death","path":"sprites/s_death/s_death.yy",},"order":3,},
     {"id":{"name":"s_tile_coliisions2","path":"sprites/s_tile_coliisions2/s_tile_coliisions2.yy",},"order":1,},
-    {"id":{"name":"s_hook_block","path":"sprites/s_hook_block/s_hook_block.yy",},"order":4,},
     {"id":{"name":"sc_player_slide","path":"scripts/sc_player_slide/sc_player_slide.yy",},"order":7,},
     {"id":{"name":"sc_calc_movement","path":"scripts/sc_calc_movement/sc_calc_movement.yy",},"order":0,},
     {"id":{"name":"sc_player_hook","path":"scripts/sc_player_hook/sc_player_hook.yy",},"order":8,},

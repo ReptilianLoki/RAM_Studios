@@ -25,11 +25,14 @@ switch (state)
 	case player.jump:
 	sc_player_jump();
 	break;
+	
 	case player.slide:
 	sc_player_slide();
 	break;
 	
 	case player.hook:
 	sc_player_hook();
+	break;
 }
+
 #endregion

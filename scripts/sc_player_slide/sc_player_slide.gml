@@ -8,6 +8,7 @@ function sc_player_slide()
 	{
 		sc_dusty_dust();
 		hsp += min(abs(hsp), max_slide) * facing * 2 * max_hsp;
+		//hsp += facing * 2 * max_hsp;
 	}
 	
 	sc_collision();

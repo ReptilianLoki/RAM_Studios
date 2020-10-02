@@ -2,7 +2,7 @@ function sc_player_jump() {
 	
 	//calculate movement
 	sc_calc_movement();
-
+	
 	//check state
 	if(sc_on_ground()) {
 		sc_dusty_dust();
