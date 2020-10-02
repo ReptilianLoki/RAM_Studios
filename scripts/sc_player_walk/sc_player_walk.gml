@@ -21,6 +21,7 @@ function sc_player_walk()
 
 	if jump 
 	{
+		sc_dusty_dust();
 		sc_jumped();
 	}
 

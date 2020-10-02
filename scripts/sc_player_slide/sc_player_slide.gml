@@ -6,6 +6,7 @@ function sc_player_slide()
 	
 	if(right or left)
 	{
+		sc_dusty_dust();
 		hsp += min(abs(hsp), max_slide) * facing * 2 * max_hsp;
 	}
 	

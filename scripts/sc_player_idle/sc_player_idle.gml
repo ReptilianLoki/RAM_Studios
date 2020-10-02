@@ -14,6 +14,7 @@ function sc_player_idle()
 	
 	//check jump
 	if(jump) {
+		sc_dusty_dust();
 		sc_jumped();
 	}
 	

@@ -5,6 +5,7 @@ function sc_player_jump() {
 
 	//check state
 	if(sc_on_ground()) {
+		sc_dusty_dust();
 		//apply stretch
 		scale_x = scale_max;
 		scale_y = scale_min;
@@ -28,7 +29,7 @@ function sc_player_jump() {
 	{
 		vsp = max(vsp, jump_spd/jump_dampner);
 	}
-
+	
 	//apply movement
 	sc_collision();
 }
