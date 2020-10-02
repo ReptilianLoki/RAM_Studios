@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"s_dust","path":"sprites/s_dust/s_dust.yy",},"order":6,},
     {"id":{"name":"o_snow","path":"objects/o_snow/o_snow.yy",},"order":4,},
     {"id":{"name":"s_death","path":"sprites/s_death/s_death.yy",},"order":3,},
     {"id":{"name":"s_tile_coliisions2","path":"sprites/s_tile_coliisions2/s_tile_coliisions2.yy",},"order":1,},
@@ -27,6 +28,7 @@
     {"id":{"name":"t_lava","path":"tilesets/t_lava/t_lava.yy",},"order":2,},
     {"id":{"name":"sc_player_idle","path":"scripts/sc_player_idle/sc_player_idle.yy",},"order":3,},
     {"id":{"name":"s_snow","path":"sprites/s_snow/s_snow.yy",},"order":5,},
+    {"id":{"name":"o_dust","path":"objects/o_dust/o_dust.yy",},"order":5,},
     {"id":{"name":"s_tile_coliisions1","path":"sprites/s_tile_coliisions1/s_tile_coliisions1.yy",},"order":0,},
   ],
   "Options": [
