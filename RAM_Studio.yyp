@@ -8,7 +8,6 @@
     {"id":{"name":"sc_calc_movement","path":"scripts/sc_calc_movement/sc_calc_movement.yy",},"order":0,},
     {"id":{"name":"sc_player_hook","path":"scripts/sc_player_hook/sc_player_hook.yy",},"order":8,},
     {"id":{"name":"sc_player_walk","path":"scripts/sc_player_walk/sc_player_walk.yy",},"order":5,},
-    {"id":{"name":"o_hook_block","path":"objects/o_hook_block/o_hook_block.yy",},"order":1,},
     {"id":{"name":"sc_player_jump","path":"scripts/sc_player_jump/sc_player_jump.yy",},"order":4,},
     {"id":{"name":"t_collisions1","path":"tilesets/t_collisions1/t_collisions1.yy",},"order":0,},
     {"id":{"name":"sc_collision","path":"scripts/sc_collision/sc_collision.yy",},"order":1,},

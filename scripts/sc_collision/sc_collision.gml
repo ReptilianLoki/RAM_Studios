@@ -19,6 +19,8 @@ function sc_collision() {
 	//check top and bottom of side
 	var t1 = tilemap_get_at_pixel(global.map, side + hsp, bbox_top);
 	var t2 = tilemap_get_at_pixel(global.map, side + hsp, bbox_bottom);
+	var t3 = tilemap_get_at_pixel(global.map2, side + hsp, bbox_top);
+	var t4 = tilemap_get_at_pixel(global.map2, side + hsp, bbox_bottom);
 
 	if	((t1 != VOID) and (t1 != PLATFORM)) or
 		((t2 != VOID) and (t2 != PLATFORM)) {
@@ -26,6 +28,11 @@ function sc_collision() {
 		if (hsp > 0) x = x - (x mod global.tile_size) + global.tile_size - 1 - (side - x);
 		else x = x - (x mod global.tile_size) - (side - x);
 		hsp = 0;
+		
+		if(t3 == HOOK or t4 == HOOK)
+		{
+			state = player.hook;
+		}
 	}
 	x += hsp;
 

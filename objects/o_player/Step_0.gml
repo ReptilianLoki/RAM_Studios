@@ -2,6 +2,7 @@
 #region Set up controls for player
 left		= keyboard_check(vk_left) or keyboard_check(ord("A"));
 right		= keyboard_check(vk_right) or keyboard_check(ord("D"));
+down		= keyboard_check(vk_down) or keyboard_check(ord("S"));
 //up			= keyboard_check(vk_up) or keyboard_check(ord("W"));
 slide		= keyboard_check_pressed(ord("Z"));
 jump		= keyboard_check_pressed(vk_space);
