@@ -1,3 +1,4 @@
+/*
 function sc_player_hook()
 {
 	if (jump) 
@@ -13,3 +14,4 @@ function sc_player_hook()
 		state = player.idle;
 	}
 }
+/*

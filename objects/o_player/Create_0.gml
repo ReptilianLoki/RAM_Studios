@@ -4,7 +4,7 @@
 hsp = 0;
 vsp = 0;
 max_hsp = 2;
-max_slide = 4;
+max_slide = 10;
 walk_spd = 0.5;
 hsp_decimal = 0;
 vsp_decimal = 0;

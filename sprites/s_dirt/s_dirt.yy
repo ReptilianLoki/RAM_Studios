@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8a989790-bfd2-458f-89b8-958dca145db7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Side Scroll Assets/Sprites.yy",
+    "name": "Tile_Sprites",
+    "path": "folders/Side Scroll Assets/Sprites/Tile_Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_dirt",

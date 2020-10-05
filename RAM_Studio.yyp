@@ -1,8 +1,9 @@
 {
   "resources": [
-    {"id":{"name":"s_dust","path":"sprites/s_dust/s_dust.yy",},"order":6,},
+    {"id":{"name":"s_dust","path":"sprites/s_dust/s_dust.yy",},"order":0,},
+    {"id":{"name":"s_player_slide","path":"sprites/s_player_slide/s_player_slide.yy",},"order":2,},
     {"id":{"name":"o_snow","path":"objects/o_snow/o_snow.yy",},"order":4,},
-    {"id":{"name":"s_death","path":"sprites/s_death/s_death.yy",},"order":3,},
+    {"id":{"name":"s_death","path":"sprites/s_death/s_death.yy",},"order":2,},
     {"id":{"name":"s_tile_coliisions2","path":"sprites/s_tile_coliisions2/s_tile_coliisions2.yy",},"order":1,},
     {"id":{"name":"sc_player_slide","path":"scripts/sc_player_slide/sc_player_slide.yy",},"order":7,},
     {"id":{"name":"sc_calc_movement","path":"scripts/sc_calc_movement/sc_calc_movement.yy",},"order":0,},
@@ -12,7 +13,7 @@
     {"id":{"name":"sc_player_jump","path":"scripts/sc_player_jump/sc_player_jump.yy",},"order":4,},
     {"id":{"name":"t_collisions1","path":"tilesets/t_collisions1/t_collisions1.yy",},"order":0,},
     {"id":{"name":"sc_collision","path":"scripts/sc_collision/sc_collision.yy",},"order":1,},
-    {"id":{"name":"s_dirt","path":"sprites/s_dirt/s_dirt.yy",},"order":2,},
+    {"id":{"name":"s_dirt","path":"sprites/s_dirt/s_dirt.yy",},"order":3,},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":0,},
     {"id":{"name":"sc_macros","path":"scripts/sc_macros/sc_macros.yy",},"order":0,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":1,},
@@ -27,7 +28,7 @@
     {"id":{"name":"sc_jumped","path":"scripts/sc_jumped/sc_jumped.yy",},"order":2,},
     {"id":{"name":"t_lava","path":"tilesets/t_lava/t_lava.yy",},"order":2,},
     {"id":{"name":"sc_player_idle","path":"scripts/sc_player_idle/sc_player_idle.yy",},"order":3,},
-    {"id":{"name":"s_snow","path":"sprites/s_snow/s_snow.yy",},"order":5,},
+    {"id":{"name":"s_snow","path":"sprites/s_snow/s_snow.yy",},"order":1,},
     {"id":{"name":"o_dust","path":"objects/o_dust/o_dust.yy",},"order":5,},
     {"id":{"name":"s_tile_coliisions1","path":"sprites/s_tile_coliisions1/s_tile_coliisions1.yy",},"order":0,},
   ],
@@ -58,6 +59,7 @@
     {"folderPath":"folders/Side Scroll Assets/Objects/Control.yy","order":3,"resourceVersion":"1.0","name":"Control","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Side Scroll Assets/Sprites/Player.yy","order":0,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Side Scroll Assets/Sprites/Tile_Sprites.yy","order":1,"resourceVersion":"1.0","name":"Tile_Sprites","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Side Scroll Assets/Sprites/Particles.yy","order":4,"resourceVersion":"1.0","name":"Particles","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

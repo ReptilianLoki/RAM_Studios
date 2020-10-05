@@ -88,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ad6a516e-a5c8-4fbf-8445-6ffb9d51c6f6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Side Scroll Assets/Sprites.yy",
+    "name": "Particles",
+    "path": "folders/Side Scroll Assets/Sprites/Particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_dust",

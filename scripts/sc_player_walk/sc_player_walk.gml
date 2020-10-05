@@ -29,11 +29,11 @@ function sc_player_walk()
 	if(slide)
 	{
 		state = player.slide;
-		alarm[0] = room_speed / 8;
+		//alarm[0] = room_speed / 8;
 	}
 	
 	//return to idle state when moving stops
-	if (hsp = 0) state = player.idle;
+	if (hsp == 0) state = player.idle;
 
 	//apply movement
 	sc_collision();

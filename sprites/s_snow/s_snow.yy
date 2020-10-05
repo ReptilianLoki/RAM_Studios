@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"034724dc-421b-41e1-873b-cec12f727200","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Side Scroll Assets/Sprites.yy",
+    "name": "Particles",
+    "path": "folders/Side Scroll Assets/Sprites/Particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_snow",
