@@ -34,5 +34,17 @@ switch (state)
 	sc_player_hook();
 	break;
 }
-
 #endregion
+
+////Is my middle center touching the floor at the start of this frame
+//var grounded = (sc_in_floor(global.tilemap, x, bbox_left + 1) >= 0);
+
+////Jump
+//if(grounded || (sc_in_floor(global.tilemap, bbox_left, bbox_bottom+ 1) >= 0) || (sc_in_floor(global.tilemap, bbox_right, bbox_bottom+ 1)))
+//{
+//	if(jump)
+//	{
+//		vsp = -jump_spd;
+//		grounded = false;
+//	}
+//}

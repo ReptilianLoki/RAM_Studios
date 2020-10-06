@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Side Scroll Assets/Objects.yy",
+    "name": "Effects",
+    "path": "folders/Side Scroll Assets/Objects/Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_dust",
