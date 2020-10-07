@@ -4,7 +4,9 @@
     {"id":{"name":"s_player_slide","path":"sprites/s_player_slide/s_player_slide.yy",},"order":2,},
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},"order":1,},
     {"id":{"name":"o_snow","path":"objects/o_snow/o_snow.yy",},"order":1,},
+    {"id":{"name":"o_darkness","path":"objects/o_darkness/o_darkness.yy",},"order":7,},
     {"id":{"name":"s_death","path":"sprites/s_death/s_death.yy",},"order":2,},
+    {"id":{"name":"s_darkness","path":"sprites/s_darkness/s_darkness.yy",},"order":5,},
     {"id":{"name":"s_tile_coliisions2","path":"sprites/s_tile_coliisions2/s_tile_coliisions2.yy",},"order":1,},
     {"id":{"name":"sc_player_slide","path":"scripts/sc_player_slide/sc_player_slide.yy",},"order":7,},
     {"id":{"name":"sc_calc_movement","path":"scripts/sc_calc_movement/sc_calc_movement.yy",},"order":0,},
@@ -51,8 +53,8 @@
   },
   "RoomOrder": [
     {"name":"init","path":"rooms/init/init.yy",},
-    {"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},
+    {"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Side Scroll Assets.yy","order":2,"resourceVersion":"1.0","name":"Side Scroll Assets","tags":[],"resourceType":"GMFolder",},
