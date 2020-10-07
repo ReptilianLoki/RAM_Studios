@@ -51,8 +51,8 @@
   },
   "RoomOrder": [
     {"name":"init","path":"rooms/init/init.yy",},
-    {"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},
     {"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},
+    {"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Side Scroll Assets.yy","order":2,"resourceVersion":"1.0","name":"Side Scroll Assets","tags":[],"resourceType":"GMFolder",},
