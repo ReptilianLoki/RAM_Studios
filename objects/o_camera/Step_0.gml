@@ -22,3 +22,13 @@ shake_remain = max(0,shake_remain - ((1/shake_length) * shake_magnitude));
 
 //
 camera_set_view_pos(cam, x - view_width_half, y - view_height_half); 
+
+if (layer_exists("Hills"))
+{
+	layer_x("Hills",x/3);	
+}
+
+if (layer_exists("Cacti"))
+{
+	layer_x("Cacti",x/3);	
+}
