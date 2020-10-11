@@ -26,10 +26,12 @@ function sc_player_walk()
 	}
 
 	
-	if(slide)
+	if(slide && slide_pause)
 	{
 		state = player.slide;
-		//alarm[0] = room_speed / 8;
+		slide_friction = FRICTION;
+		//alarm[0] = room_speed;
+		alarm[1] = room_speed / 9;
 	}
 	
 	//return to idle state when moving stops

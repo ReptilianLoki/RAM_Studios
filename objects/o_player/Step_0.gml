@@ -36,6 +36,16 @@ switch (state)
 }
 #endregion
 
+if(slide_timer <= 0 && slide_pause == false)
+{
+	slide_pause = true;
+	slide_timer = TIMER;
+}
+else
+{
+	slide_timer--;
+}
+
 ////Is my middle center touching the floor at the start of this frame
 //var grounded = (sc_in_floor(global.tilemap, x, bbox_left + 1) >= 0);
 

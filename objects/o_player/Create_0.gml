@@ -1,9 +1,11 @@
 /// @description Initialize Player Variables
+#macro FRICTION .2
+#macro TIMER 120
 
 //speeds
 hsp = 0;
 vsp = 0;
-max_hsp = 2;
+max_hsp = 5;
 max_slide = 10;
 walk_spd = 0.5;
 hsp_decimal = 0;
@@ -12,9 +14,12 @@ jump_spd = -6;
 jump_dampner = 3;
 jumps_initial = 2;
 jumps = jumps_initial;
+slide_friction = FRICTION;
+slide_pause = true;
+slide_timer = TIMER;
 
 //friction
-drag = .12;
+drag = .06;
 
 //stretching
 scale_x = 1;
