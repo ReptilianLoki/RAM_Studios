@@ -25,7 +25,7 @@ camera_set_view_pos(cam, x - view_width_half, y - view_height_half);
 
 if (layer_exists("Hills"))
 {
-	layer_x("Hills",x/3);	
+	layer_x("Hills",x/1.5);	
 }
 
 if (layer_exists("Cacti"))
