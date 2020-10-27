@@ -1,42 +1,25 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sc_player_walk()
-{
-	//new sprite
+function sc_player_walk(){
+	
 	sprite_index = s_player_walk;
 	
-	//calculate movement
-	sc_calc_movement();
-
-	//check if falling off ledge
-	var side = bbox_bottom;
-	var t1 = tilemap_get_at_pixel(global.map, bbox_left, side + 1);
-	var t2 = tilemap_get_at_pixel(global.map, bbox_right, side + 1);
-
-	if t1 == VOID and t2 == VOID
-	{
-		state = player.jump;	
-		jumps = jumps_initial;
-	}
-
-	if jump 
-	{
-		sc_dusty_dust();
-		sc_jumped();
-	}
-
+	vsp += SPD_GRAVITY
 	
-	if(slide && slide_pause)
+	sc_calc_movement();
+	
+	if(jump)
+	{
+		sc_dusty_dust()
+		state = player.jump;
+	}
+	
+	//check slide
+	if(can_slide and slide)
 	{
 		state = player.slide;
-		slide_friction = FRICTION;
-		//alarm[0] = room_speed;
-		alarm[1] = room_speed / 9;
 	}
 	
-	//return to idle state when moving stops
-	if (hsp == 0) state = player.idle;
-
-	//apply movement
+	
 	sc_collision();
 }

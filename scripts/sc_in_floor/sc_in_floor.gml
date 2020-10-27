@@ -1,12 +1,12 @@
-///@description Checks to see if position is below the floor height of a given tile, and returns how deep in floor
-function sc_in_floor(tilemap, x_pos, y_pos){
-	var pos = tilemap_get_at_pixel(tilemap, x_pos, y_pos);
-	if(pos >= 0)
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function sc_in_floor(argument0, argument1, argument2) {
+
+	var pos = tilemap_get_at_pixel(argument0,argument1,argument2);
+	if (pos > 0)
 	{
-		//Solid block check
-		if(pos == 1) return (y_pos mod global.tile_size);
-		//Checking player height to tile height
-		var the_floor = global.heights[(x_pos mod global.tile_size) + (pos * global.tile_size)];
-		return ((y_pos mod global.tile_size) - the_floor);
-	} else return -(global.tile_size - (y_pos mod global.tile_size))
+		if (pos == 1) return (argument2 mod TILE_SIZE); //solid block, would end up returning true anyway but this is FASTER, GOTTAGOFAST.
+		var thefloor = global.heights[(argument1 mod TILE_SIZE) + pos*TILE_SIZE];
+		return ((argument2 mod TILE_SIZE) - thefloor);
+	} else return -(TILE_SIZE - (argument2 mod TILE_SIZE))
 }

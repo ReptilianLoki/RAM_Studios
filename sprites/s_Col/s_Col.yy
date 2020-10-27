@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a07ac46a-df48-40fe-be82-164809ca701b","path":"sprites/s_angle_collision/s_angle_collision.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a07ac46a-df48-40fe-be82-164809ca701b","path":"sprites/s_angle_collision/s_angle_collision.yy",},"LayerId":{"name":"3248ce25-dd71-46bc-b6d3-a40b5ebe3ac1","path":"sprites/s_angle_collision/s_angle_collision.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_angle_collision","path":"sprites/s_angle_collision/s_angle_collision.yy",},"resourceVersion":"1.0","name":"a07ac46a-df48-40fe-be82-164809ca701b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a07ac46a-df48-40fe-be82-164809ca701b","path":"sprites/s_Col/s_Col.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a07ac46a-df48-40fe-be82-164809ca701b","path":"sprites/s_Col/s_Col.yy",},"LayerId":{"name":"3248ce25-dd71-46bc-b6d3-a40b5ebe3ac1","path":"sprites/s_Col/s_Col.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_Col","path":"sprites/s_Col/s_Col.yy",},"resourceVersion":"1.0","name":"a07ac46a-df48-40fe-be82-164809ca701b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_angle_collision","path":"sprites/s_angle_collision/s_angle_collision.yy",},
+    "spriteId": {"name":"s_Col","path":"sprites/s_Col/s_Col.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6fd1ae62-1970-4d1d-83c8-a839eb81429a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a07ac46a-df48-40fe-be82-164809ca701b","path":"sprites/s_angle_collision/s_angle_collision.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6fd1ae62-1970-4d1d-83c8-a839eb81429a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a07ac46a-df48-40fe-be82-164809ca701b","path":"sprites/s_Col/s_Col.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_angle_collision","path":"sprites/s_angle_collision/s_angle_collision.yy",},
+    "parent": {"name":"s_Col","path":"sprites/s_Col/s_Col.yy",},
     "resourceVersion": "1.3",
-    "name": "s_angle_collision",
+    "name": "s_Col",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Side Scroll Assets/Sprites/Tile_Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_angle_collision",
+  "name": "s_Col",
   "tags": [],
   "resourceType": "GMSprite",
 }

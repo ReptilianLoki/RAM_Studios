@@ -1,35 +1,24 @@
-function sc_player_jump() {
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function sc_player_jump(){
+	vsp += SPD_GRAVITY
 	
-	//calculate movement
-	sc_calc_movement();
-	
-	//check state
-	if(sc_on_ground()) {
-		sc_dusty_dust();
-		//apply stretch
-		scale_x = scale_max;
-		scale_y = scale_min;
-		if(hsp != 0)
-		{ 
-			state = player.moving;
+	//Jump
+	if (grounded || (sc_in_floor(tilemap,bbox_left,bbox_bottom+1) >= 0) || (sc_in_floor(tilemap,bbox_right,bbox_bottom+1) >= 0))
+	{
+		if (jump)
+		{
+			vsp = -SPD_JUMP;
+			grounded = false;
 		}
 		else
-		{ 
-			state = player.idle;
-		};
+		{
+			state = player.moving;
+			sc_dusty_dust();
+		}
 	}
 	
-	//enable double jumps
-	if jump {
-		sc_jumped();
-	}
-
-	//enable smaller jumps
-	if(vsp < 0 and !jump_held)
-	{
-		vsp = max(vsp, jump_spd/jump_dampner);
-	}
+	sc_calc_movement();
 	
-	//apply movement
 	sc_collision();
 }

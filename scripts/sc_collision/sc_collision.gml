@@ -1,91 +1,73 @@
-/// collision();
-function sc_collision() {
-	//Is my middle center touching the floor at the start of this frame
-	var grounded = (sc_in_floor(global.tilemap, x, bbox_left + 1) >= 0);
+function sc_collision(){
+	//get previous y position
+	prev_y = y;
 	
-	//apply carried over decimals
-	hsp += hsp_decimal;
-	vsp += vsp_decimal;
+	//Re apply fractions
+	hsp += hsp_fraction;
+	vsp += vsp_fraction;
 
-	//floor decimals
-	//save and subtract decimals
-	hsp_decimal = hsp - (floor(abs(hsp)) * sign(hsp));
-	hsp -= hsp_decimal;
-	vsp_decimal = vsp - (floor(abs(vsp)) * sign(vsp));
-	vsp -= vsp_decimal;
+	//Store and Remove fractions
+	//Important: go into collision with whole integers ONLY!
+	hsp_fraction = hsp - (floor(abs(hsp)) * sign(hsp));
+	hsp -= hsp_fraction;
+	vsp_fraction = vsp - (floor(abs(vsp)) * sign(vsp));
+	vsp -= vsp_fraction;
 
-	//horizontal collision
-	var side;
-	//determine which side to test
-	if hsp > 0 side = bbox_right else side = bbox_left;
 
-	//check top and bottom of side
-	var t1 = tilemap_get_at_pixel(global.map, side + hsp, bbox_top);
-	var t2 = tilemap_get_at_pixel(global.map, side + hsp, bbox_bottom);
-	
-	//Ignore bottom side tiles if on a slope
-	if(tilemap_get_at_pixel(global.tilemap, x, bbox_bottom) > 1) t2 = 0;
-
-	if	((t1 != VOID) and (t1 != PLATFORM)) or
-		((t2 != VOID) and (t2 != PLATFORM)) {
-		//collision found
-		if (hsp > 0) x = x - (x mod global.tile_size) + global.tile_size - 1 - (side - x);
-		else x = x - (x mod global.tile_size) - (side - x);
+	//Horizontal Collision
+	if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
+	p1 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top);
+	p2 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_bottom); 
+	if (tilemap_get_at_pixel(tilemap,x,bbox_bottom) > 1) p2 = 0; //ignore bottom side tiles if on a slope.
+	if (p1 == 1) || (p2 == 1) //Inside a tile with collision
+	{
+		if (hsp > 0) x = x - (x mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_right - x);
+		else x = x - (x mod TILE_SIZE) - (bbox_left - x);
 		hsp = 0;
 	}
 	x += hsp;
 
-	//vertical collision
-	var side;
-	
-	if(tilemap_get_at_pixel(global.tilemap, x, bbox_bottom + vsp) <= 1)
+	//Vertical Collision
+	//is this not a slope?
+	if (tilemap_get_at_pixel(tilemap,x,bbox_bottom+vsp) <= 1)
 	{
-		//determine which side to test
-		if vsp > 0 side = bbox_bottom else side = bbox_top;
-
-		//check left and right side
-		var t1 = tilemap_get_at_pixel(global.map, bbox_left, side + vsp);
-		var t2 = tilemap_get_at_pixel(global.map, bbox_right, side + vsp);
-		var t3 = tilemap_get_at_pixel(global.map, bbox_left, bbox_bottom);
-		var t4 = tilemap_get_at_pixel(global.map, bbox_right, bbox_bottom);
-
-		if	((t1 != VOID and (vsp > 0 or t1 != PLATFORM)) and (t3 != PLATFORM)) or
-			((t2 != VOID and (vsp > 0 or t2 != PLATFORM)) and (t4 != PLATFORM)) {
-			//collision found
-			if (vsp > 0) y = y - (y mod global.tile_size) + global.tile_size - 1 - (side - y);
-			else y = y - (y mod global.tile_size) - (side - y);
+		if (vsp >= 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
+		p1 = tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp) 
+		p2 = tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vsp)
+		if (p1 == 1) || (p2 == 1)
+		{
+			if (vsp >= 0) y = y - (y mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_bottom - y);
+			else y = y - (y mod TILE_SIZE) - (bbox_top - y);
 			vsp = 0;
-			//death tile check
-			if t1 == DEATH or t2 == DEATH or y > room_height {
-				game_restart();
-			}
 		}
 	}
-	
-	var floor_dist = sc_in_floor(global.tilemap, x, bbox_bottom + vsp);
-	if(floor_dist >= 0)	
+	var floordist = sc_in_floor(tilemap,x,bbox_bottom+vsp)
+	if (floordist >= 0)
 	{
 		y += vsp;
-		y -= (floor_dist + 1);
+		y -= (floordist+1);		
 		vsp = 0;
-		floor_dist = -1;
+		floordist = -1;
 	}
-
 	y += vsp;
-	
+
+
 	//Walk down slopes
-	if(grounded)
+	if (grounded)
 	{
-		y += abs(floor_dist) - 1;
+		y += abs(floordist)-1;
 		//if at base of current tile
-		if((bbox_bottom mod global.tile_size) == global.tile_size - 1)
+		if ((bbox_bottom mod TILE_SIZE) == TILE_SIZE-1)
 		{
-			//if the slope continues
-			if(tilemap_get_at_pixel(global.tilemap, x, bbox_bottom + 1) > 1)
+			// if slope continues
+			if (tilemap_get_at_pixel(tilemap,x,bbox_bottom+1) > 1)
 			{
-				// move there
-				y += abs(sc_in_floor(global.tilemap, x, bbox_bottom));
+				//move there
+				y += abs(sc_in_floor(tilemap,x,bbox_bottom+1));
 			}
+		
 		}
+		sc_check_slide();
+		sc_check_inclinedecline(y);
 	}
 }

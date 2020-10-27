@@ -1,30 +1,32 @@
-///calc_movement();
-function sc_calc_movement() {
-	hsp += (right - left) * walk_spd;
-	vsp += global.grav;
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function sc_calc_movement(){
+	move = (right - left)
 	
-	//drag
-	hsp = lerp(hsp, 0, drag);
-
-	//stop
-	if(abs(hsp) <= 0.1)
-	{ 
-		hsp = 0;
+	if((right or left) and !is_sliding)
+	{
+		hsp += SPD_WALK * move;
+		if(hsp >= MAX_WALK)
+		{
+			hsp = MAX_WALK
+		}
+		else if(hsp <= -MAX_WALK)
+		{
+			hsp = -MAX_WALK
+		}
+		
 	}
-
-	//face correct way
+	else
+	{
+		hsp -= min(abs(hsp),current_friction) * sign(hsp);
+		if(hsp == 0)
+		{
+			state = player.idle;
+		}
+	}
+	
 	if(hsp != 0)
 	{
-		facing = sign(hsp);
-		image_xscale = facing;
+		image_xscale = sign(hsp);
 	}
-
-	//limit speed
-	hsp = min(abs(hsp), max_hsp) * facing;
-
-	//stop stretch
-	//scale_x = lerp(scale_x, 1, scale_decay);
-	//scale_y = lerp(scale_y, 1, scale_decay);
-
-
 }

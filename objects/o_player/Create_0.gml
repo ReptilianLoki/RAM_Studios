@@ -1,46 +1,31 @@
-/// @description Initialize Player Variables
-#macro FRICTION .2
-#macro TIMER 120
+/// @description  Macros, Variables, Tilemap
+#macro SPD_WALK 0.25
+#macro SPD_GRAVITY 0.4
+#macro SPD_JUMP 8
+#macro MAX_WALK 6
+#macro FRICTION 0.5
 
-//speeds
 hsp = 0;
 vsp = 0;
-max_hsp = 5;
-max_slide = 10;
-walk_spd = 0.5;
-hsp_decimal = 0;
-vsp_decimal = 0;
-jump_spd = -6;
-jump_dampner = 3;
-jumps_initial = 2;
-jumps = jumps_initial;
-slide_friction = FRICTION;
-slide_pause = true;
-slide_timer = TIMER;
+hsp_fraction = 0;
+vsp_fraction = 0;
+slide_friction = 0.1;
+is_sliding = false;
+can_slide = true;
+current_friction = FRICTION;
+prev_y = y;
+incline_friction = .93;
+incline_walk_friction = .87;
+decline_friction = 1.02;
 
-//friction
-drag = .06;
-
-//stretching
-scale_x = 1;
-scale_y = 1;
-scale_min = 0.75;
-scale_max = 1.25;
-scale_decay = 0.2;
-
-//facing direction
-facing = 1;
-
-//player health
-hp = 5;
+tilemap = layer_tilemap_get_id("Collision");
 
 enum player
 {
-	idle,
+	idle, 
 	moving,
 	jump,
-	slide,
-	hook
+	slide
 }
 
 state = player.idle;

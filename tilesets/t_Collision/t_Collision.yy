@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_angle_collision",
-    "path": "sprites/s_angle_collision/s_angle_collision.yy",
+    "name": "s_Col",
+    "path": "sprites/s_Col/s_Col.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
@@ -48,7 +48,7 @@
     "path": "folders/Side Scroll Assets/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "t_angle_collision",
+  "name": "t_Collision",
   "tags": [],
   "resourceType": "GMTileSet",
 }
