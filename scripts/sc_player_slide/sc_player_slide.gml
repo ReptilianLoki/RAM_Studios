@@ -9,6 +9,6 @@ function sc_player_slide(){
 	{
 		state = player.moving;
 	}
-	
+	sc_dusty_dust();
 	sc_collision();
 }
