@@ -15,6 +15,7 @@ function sc_player_jump(){
 		{
 			state = player.moving;
 			sc_dusty_dust();
+			sc_screen_shake(2,3);
 		}
 	}
 	

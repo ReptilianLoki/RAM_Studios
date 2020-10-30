@@ -17,6 +17,7 @@ prev_y = y;
 incline_friction = .93;
 incline_walk_friction = .87;
 decline_friction = 1.02;
+hascontrol = true;
 
 tilemap = layer_tilemap_get_id("Collision");
 
