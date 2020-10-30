@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "s_darkness",
-    "path": "sprites/s_darkness/s_darkness.yy",
-  },
+  "spriteId": null,
   "tileWidth": 16,
   "tileHeight": 16,
   "tilexoff": 0,

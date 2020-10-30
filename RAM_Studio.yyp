@@ -2,11 +2,11 @@
   "resources": [
     {"id":{"name":"s_dust","path":"sprites/s_dust/s_dust.yy",},"order":0,},
     {"id":{"name":"s_player_slide","path":"sprites/s_player_slide/s_player_slide.yy",},"order":2,},
+    {"id":{"name":"s_player_jump","path":"sprites/s_player_jump/s_player_jump.yy",},"order":3,},
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},"order":1,},
     {"id":{"name":"o_snow","path":"objects/o_snow/o_snow.yy",},"order":1,},
     {"id":{"name":"s_death","path":"sprites/s_death/s_death.yy",},"order":2,},
     {"id":{"name":"s_trigger","path":"sprites/s_trigger/s_trigger.yy",},"order":7,},
-    {"id":{"name":"s_darkness","path":"sprites/s_darkness/s_darkness.yy",},"order":5,},
     {"id":{"name":"sc_check_inclinedecline","path":"scripts/sc_check_inclinedecline/sc_check_inclinedecline.yy",},"order":11,},
     {"id":{"name":"s_tile_coliisions2","path":"sprites/s_tile_coliisions2/s_tile_coliisions2.yy",},"order":1,},
     {"id":{"name":"sc_transition","path":"scripts/sc_transition/sc_transition.yy",},"order":2,},

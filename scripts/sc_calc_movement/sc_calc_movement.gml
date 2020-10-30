@@ -1,9 +1,8 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sc_calc_movement(){
+function sc_calc_movement()
+{
 	move = (right - left)
 	
-	if((right or left) and !is_sliding)
+	if ((right or left) and !is_sliding)
 	{
 		hsp += SPD_WALK * move;
 		if(hsp >= MAX_WALK)
@@ -25,7 +24,7 @@ function sc_calc_movement(){
 		}
 	}
 	
-	if(hsp != 0)
+	if (hsp != 0)
 	{
 		image_xscale = sign(hsp);
 	}

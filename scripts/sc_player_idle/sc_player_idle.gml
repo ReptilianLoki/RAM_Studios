@@ -12,11 +12,12 @@ function sc_player_idle()
 	}
 	
 	//check jump
-	if(jump) {
+	if (jump) 
+	{
 		state = player.jump;
 		sc_dusty_dust();
 	}
-	
+
 	//check slide
 	//if(can_slide and is_sliding)
 	//{

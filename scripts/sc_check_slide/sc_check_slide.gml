@@ -1,18 +1,7 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sc_check_slide(){
-	//check if possible to slide
-	if(abs(hsp) > (MAX_WALK - 1))
-	{
-		if(!is_sliding)
-		{
-			can_slide = true;
-		}
-		else
-		{
-			can_slide = false;
-		}
-	}
+function sc_check_slide()
+{
+
+	can_slide = true;
 	
 	//check if we are holding down the slide button
 	if(can_slide and slide)

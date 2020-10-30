@@ -1,4 +1,5 @@
-function sc_player_slide(){
+function sc_player_slide()
+{
 	hsp -= min(abs(hsp),current_friction) * sign(hsp);
 	sprite_index = s_player_slide;
 	
@@ -9,7 +10,7 @@ function sc_player_slide(){
 	{
 		state = player.moving;
 	}
-	sc_screen_shake(4,6);
+	
 	sc_dusty_dust();
 	sc_collision();
 }
