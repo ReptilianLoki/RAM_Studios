@@ -1,7 +1,19 @@
 function sc_check_slide()
 {
 
-	can_slide = true;
+	if(abs(hsp) > (MAX_WALK - 1))
+	{
+		if(!is_sliding)
+		{
+			can_slide = true;
+		}
+		else
+		{
+			can_slide = false;
+		}
+	}
+	else if(inclining)
+	{}
 	
 	//check if we are holding down the slide button
 	if(can_slide and slide)

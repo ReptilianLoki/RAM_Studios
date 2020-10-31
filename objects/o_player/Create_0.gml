@@ -14,6 +14,7 @@ is_sliding = false;
 can_slide = true;
 current_friction = FRICTION;
 prev_y = y;
+inclining = true;
 incline_friction = .93;
 incline_walk_friction = .87;
 decline_friction = 1.02;

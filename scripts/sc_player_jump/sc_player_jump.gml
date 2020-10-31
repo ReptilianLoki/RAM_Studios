@@ -19,6 +19,7 @@ function sc_player_jump()
 			state = player.moving;
 			sc_dusty_dust();
 			sc_screen_shake(2,3);
+			audio_play_sound(sn_land, 3, false);
 		}
 	}
 	

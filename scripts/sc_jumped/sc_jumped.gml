@@ -5,7 +5,7 @@ function sc_jumped()
 	if jumps > 0 
 	{
 		sc_dusty_dust();
-		audio_play_sound(sn_land,5,false);
+		//audio_play_sound(sn_land,10,false);
 		scale_x = scale_min;
 		scale_y = scale_max;
 		state = player.jump;
