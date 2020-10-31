@@ -11,6 +11,8 @@ function sc_player_jump()
 		{
 			vsp = -SPD_JUMP;
 			grounded = false;
+			sc_dusty_dust();
+			audio_play_sound(sn_jump,1,false);
 		}
 		else
 		{

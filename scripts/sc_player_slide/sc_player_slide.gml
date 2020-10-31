@@ -12,5 +12,6 @@ function sc_player_slide()
 	}
 	
 	sc_dusty_dust();
+	sc_screen_shake(3,6);
 	sc_collision();
 }

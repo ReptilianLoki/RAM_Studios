@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"89809681-2644-4e53-96bf-d514aaefce69","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Side Scroll Assets/Sprites.yy",
+    "name": "Tile_Sprites",
+    "path": "folders/Side Scroll Assets/Sprites/Tile_Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_trigger",

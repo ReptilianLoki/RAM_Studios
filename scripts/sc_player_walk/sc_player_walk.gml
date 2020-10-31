@@ -10,7 +10,8 @@ function sc_player_walk(){
 	
 	if(jump)
 	{
-		sc_dusty_dust()
+		sc_dusty_dust();
+		sc_screen_shake(1,3);
 		state = player.jump;
 	}
 	

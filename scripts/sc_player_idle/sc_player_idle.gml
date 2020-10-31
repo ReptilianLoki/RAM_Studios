@@ -15,7 +15,6 @@ function sc_player_idle()
 	if (jump) 
 	{
 		state = player.jump;
-		sc_dusty_dust();
 	}
 
 	//check slide
