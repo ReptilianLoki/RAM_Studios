@@ -18,14 +18,14 @@ function sc_calc_movement()
 	else
 	{
 		hsp -= min(abs(hsp),current_friction) * sign(hsp);
-		if(hsp == 0)
-		{
-			state = player.idle;
-		}
 	}
 	
-	if (hsp != 0)
+	if (left)
 	{
-		image_xscale = sign(hsp);
+		image_xscale = -1;
+	}
+	else if(right)
+	{
+		image_xscale = 1;
 	}
 }

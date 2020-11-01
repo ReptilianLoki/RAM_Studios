@@ -9,6 +9,7 @@ function sc_player_idle()
 	if (left or right)
 	{
 		state = player.moving;
+		sprite_index = s_player_walk;
 	}
 	
 	//check jump
@@ -16,12 +17,8 @@ function sc_player_idle()
 	{
 		state = player.jump;
 	}
-
-	//check slide
-	//if(can_slide and is_sliding)
-	//{
-	//	state = player.slide;
-	//}
+	
+	sc_calc_movement();
 	
 	sc_collision();
 }

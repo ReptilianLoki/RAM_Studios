@@ -21,6 +21,10 @@ function sc_player_walk(){
 		state = player.slide;
 	}
 	
+	if(hsp == 0 or !left and !right)
+	{
+		state = player.idle;
+	}
 	
 	sc_collision();
 }

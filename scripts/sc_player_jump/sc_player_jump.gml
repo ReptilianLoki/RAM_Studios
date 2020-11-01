@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function sc_player_jump()
 {
 	vsp += SPD_GRAVITY
@@ -16,7 +14,7 @@ function sc_player_jump()
 		}
 		else
 		{
-			state = player.moving;
+			state = player.idle;
 			sc_dusty_dust();
 			sc_screen_shake(2,3);
 			audio_play_sound(sn_land, 3, false);
