@@ -1,6 +1,5 @@
 function sc_check_slide()
 {
-
 	if(abs(hsp) > (MAX_WALK - 1))
 	{
 		if(!is_sliding)
@@ -12,8 +11,11 @@ function sc_check_slide()
 			can_slide = false;
 		}
 	}
-	else if(inclining)
-	{}
+	
+	if((left and hsp > 0) or (right and hsp < 0))
+	{
+		can_slide = false;
+	}
 	
 	//check if we are holding down the slide button
 	if(can_slide and slide)
@@ -21,6 +23,7 @@ function sc_check_slide()
 		is_sliding = true;
 		can_slide = false;
 		hsp = MAX_WALK * 1.8 * sign(hsp);
+		state = player.slide;
 	}
 	
 	//check if we are sliding but just released the slide key

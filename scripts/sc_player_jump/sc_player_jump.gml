@@ -5,14 +5,14 @@ function sc_player_jump()
 	//Jump
 	if (grounded || (sc_in_floor(tilemap,bbox_left,bbox_bottom+1) >= 0) || (sc_in_floor(tilemap,bbox_right,bbox_bottom+1) >= 0))
 	{
-		if (jump) and (!incline_check)
+		if ((jump) and (!incline_check))
 		{
 			vsp = -SPD_JUMP;
 			grounded = false;
 			sc_dusty_dust();
 			audio_play_sound(sn_jump,1,false);
 		}
-		else
+		else if(!incline_check)
 		{
 			state = player.idle;
 			sc_dusty_dust();
