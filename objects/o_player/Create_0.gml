@@ -19,7 +19,7 @@ incline_friction = .93;
 incline_walk_friction = .87;
 decline_friction = 1.02;
 hascontrol = true;
-screen_shake_on = false; 
+incline_check = false; 
 
 tilemap = layer_tilemap_get_id("Collision");
 

@@ -5,7 +5,7 @@ function sc_player_jump()
 	//Jump
 	if (grounded || (sc_in_floor(tilemap,bbox_left,bbox_bottom+1) >= 0) || (sc_in_floor(tilemap,bbox_right,bbox_bottom+1) >= 0))
 	{
-		if (jump)
+		if (jump) and (!incline_check)
 		{
 			vsp = -SPD_JUMP;
 			grounded = false;
