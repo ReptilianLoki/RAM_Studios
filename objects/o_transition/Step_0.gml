@@ -35,6 +35,7 @@ if (mode != TRANS_MODE.OFF)
 			case TRANS_MODE.RESTART:
 			{
 				game_restart();
+				audio_play_sound(sn_menu_music,1000,false);
 				break;
 			}
 		}

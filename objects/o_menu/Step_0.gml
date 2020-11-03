@@ -6,15 +6,18 @@ menu_x += (menu_x_target - menu_x) / menu_speed;
 //keyboard controls
 if (menu_control)
 {
-	audio_play_sound(sn_menu_music,6,false);
+	//audio_play_sound(sn_menu_music,6,false);
+	//audio_stop_sound(sn_game_music);
 	if (keyboard_check_pressed(vk_up))
 	{
+		audio_play_sound(sn_option_scroll,2,false);
 		menu_cursor++;
 		if (menu_cursor >= menu_items) menu_cursor = 0;
 	}
 	
 	if (keyboard_check_pressed(vk_down))
 	{
+		audio_play_sound(sn_option_scroll,2,false);
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items - 1;
 	}
@@ -25,7 +28,7 @@ if (menu_control)
 		menu_committed = menu_cursor;
 		sc_screen_shake(4,15)
 		menu_control = false;
-		audio_play_sound(sn_menu_click,3,false);
+		audio_play_sound(sn_menu_click,1000,false);
 	}
 }
 

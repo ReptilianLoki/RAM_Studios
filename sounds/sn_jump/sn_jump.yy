@@ -13,8 +13,8 @@
   "soundFile": "sn_jump.wav",
   "duration": 0.817698,
   "parent": {
-    "name": "Player",
-    "path": "folders/Side Scroll Assets/Scripts/Player.yy",
+    "name": "Sounds",
+    "path": "folders/Side Scroll Assets/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "sn_jump",

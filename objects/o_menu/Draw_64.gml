@@ -11,11 +11,11 @@ for (var i = 0; i < menu_items; i++)
 	if (menu_cursor == i)
 	{
 		txt = string_insert("> ", txt, 0)
-		var col = c_blue;
+		var col = c_yellow;
 	}
 	else
 	{
-		var col = c_red;
+		var col = c_maroon;
 	}
 	var xx = menu_x;
 	var yy = menu_y - (menu_itemheight * (i * 1.5));
