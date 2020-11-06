@@ -83,11 +83,11 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"menu_room","path":"rooms/menu_room/menu_room.yy",},
     {"name":"init","path":"rooms/init/init.yy",},
+    {"name":"menu_room","path":"rooms/menu_room/menu_room.yy",},
     {"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},
-    {"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"imr_two","path":"rooms/imr_two/imr_two.yy",},
+    {"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Side Scroll Assets.yy","order":0,"resourceVersion":"1.0","name":"Side Scroll Assets","tags":[],"resourceType":"GMFolder",},

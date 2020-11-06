@@ -1,19 +1,18 @@
 function sc_collision(){
 	//get previous y position
 	prev_y = y;
-	
 	//Re apply fractions
 	hsp += hsp_fraction;
 	vsp += vsp_fraction;
-
+	
 	//Store and Remove fractions
 	//Important: go into collision with whole integers ONLY!
 	hsp_fraction = hsp - (floor(abs(hsp)) * sign(hsp));
 	hsp -= hsp_fraction;
 	vsp_fraction = vsp - (floor(abs(vsp)) * sign(vsp));
 	vsp -= vsp_fraction;
-
-
+	
+	
 	//Horizontal Collision
 	if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
 	p1 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top);
@@ -26,7 +25,7 @@ function sc_collision(){
 		hsp = 0;
 	}
 	x += hsp;
-
+	
 	//Vertical Collision
 	//is this not a slope?
 	if (tilemap_get_at_pixel(tilemap,x,bbox_bottom+vsp) <= 1)
@@ -50,8 +49,8 @@ function sc_collision(){
 		floordist = -1;
 	}
 	y += vsp;
-
-
+	
+	
 	//Walk down slopes
 	if (grounded)
 	{
@@ -65,9 +64,12 @@ function sc_collision(){
 				//move there
 				y += abs(sc_in_floor(tilemap,x,bbox_bottom+1));
 			}
-		
+			
 		}
 		sc_check_slide();
-		sc_check_inclinedecline(y);
+		if(left or right)
+		{
+			sc_check_inclinedecline(y);
+		}
 	}
 }
