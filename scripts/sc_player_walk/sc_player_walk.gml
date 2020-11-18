@@ -3,6 +3,10 @@
 function sc_player_walk(){
 	
 	sprite_index = s_player_walk;
+	if(image_speed = 0)
+	{
+		image_speed = 1;
+	}
 	
 	vsp += SPD_GRAVITY
 	

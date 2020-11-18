@@ -25,6 +25,12 @@ function sc_player_jump()
 	{
 		sprite_index = s_player_slide;
 	}
+	else
+	{
+		sprite_index = s_player_jump;
+		image_index = 2;
+		image_speed = 0;
+	}
 	
 	sc_calc_movement();
 	
