@@ -21,6 +21,11 @@ function sc_player_jump()
 		}
 	}
 	
+	if(slide)
+	{
+		sprite_index = s_player_slide;
+	}
+	
 	sc_calc_movement();
 	
 	sc_collision();
