@@ -14,4 +14,12 @@ function sc_player_slide()
 	sc_dusty_dust();
 	sc_screen_shake(1,3);
 	sc_collision();
+
+	if (is_sliding and jump)
+	{
+		state = player.jump;
+		
+	}
+	
+	
 }

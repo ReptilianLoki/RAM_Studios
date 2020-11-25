@@ -82,12 +82,12 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrder": [
-    {"name":"init","path":"rooms/init/init.yy",},
-    {"name":"menu_room","path":"rooms/menu_room/menu_room.yy",},
-    {"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},
-    {"name":"imr_two","path":"rooms/imr_two/imr_two.yy",},
-    {"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},
+  "RoomOrderNodes": [
+    {"roomId":{"name":"init","path":"rooms/init/init.yy",},},
+    {"roomId":{"name":"menu_room","path":"rooms/menu_room/menu_room.yy",},},
+    {"roomId":{"name":"In_my_room","path":"rooms/In_my_room/In_my_room.yy",},},
+    {"roomId":{"name":"imr_two","path":"rooms/imr_two/imr_two.yy",},},
+    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Side Scroll Assets.yy","order":0,"resourceVersion":"1.0","name":"Side Scroll Assets","tags":[],"resourceType":"GMFolder",},
@@ -112,15 +112,15 @@
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [
     {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"476114__hordik__landing (1).m4a","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2.3.0.529",
+    "IDEVersion": "2.3.1.536",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "RAM_Studio",
   "tags": [],
   "resourceType": "GMProject",
