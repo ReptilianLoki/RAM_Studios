@@ -18,8 +18,7 @@ function sc_player_slide()
 	if (is_sliding and jump)
 	{
 		state = player.jump;
-		
+		sprite_index = s_player_jump;
 	}
-	
 	
 }
