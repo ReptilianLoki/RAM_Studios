@@ -21,4 +21,10 @@ function sc_player_slide()
 		sprite_index = s_player_jump;
 	}
 	
+	if (is_sliding and can_boost and boost)
+	{
+		hsp = hsp * 2;
+		can_boost = false;
+	}
+	
 }

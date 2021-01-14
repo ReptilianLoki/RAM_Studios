@@ -1,7 +1,7 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sc_player_walk(){
+function sc_player_walk()
+{
 	
+	can_boost = true;
 	sprite_index = s_player_walk;
 	if(image_speed = 0)
 	{
