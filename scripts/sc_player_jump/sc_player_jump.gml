@@ -1,6 +1,6 @@
 function sc_player_jump()
 {
-	vsp += SPD_GRAVITY
+	vsp += grv_final
 	
 	//Jump
 	if (grounded || (sc_in_floor(tilemap,bbox_left,bbox_bottom+1) >= 0) || (sc_in_floor(tilemap,bbox_right,bbox_bottom+1) >= 0))

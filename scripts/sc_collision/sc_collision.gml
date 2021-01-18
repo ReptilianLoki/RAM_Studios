@@ -12,20 +12,6 @@ function sc_collision(){
 	vsp_fraction = vsp - (floor(abs(vsp)) * sign(vsp));
 	vsp -= vsp_fraction;
 	
-	
-	//Horizontal Collision
-	if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
-	p1 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top);
-	p2 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_bottom); 
-	if (tilemap_get_at_pixel(tilemap,x,bbox_bottom) > 1) p2 = 0; //ignore bottom side tiles if on a slope.
-	if (p1 == 1) || (p2 == 1) //Inside a tile with collision
-	{
-		if (hsp > 0) x = x - (x mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_right - x);
-		else x = x - (x mod TILE_SIZE) - (bbox_left - x);
-		hsp = 0;
-	}
-	x += hsp;
-	
 	//Vertical Collision
 	//is this not a slope?
 	if (tilemap_get_at_pixel(tilemap,x,bbox_bottom+vsp) <= 1)
@@ -39,6 +25,8 @@ function sc_collision(){
 			else y = y - (y mod TILE_SIZE) - (bbox_top - y);
 			vsp = 0;
 		}
+		
+		
 	}
 	var floordist = sc_in_floor(tilemap,x,bbox_bottom+vsp)
 	if (floordist >= 0)
@@ -72,4 +60,21 @@ function sc_collision(){
 			sc_check_inclinedecline(y);
 		}
 	}
+	
+	//Horizontal Collision
+	if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
+	p1 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top);
+	p2 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_bottom); 
+	if (tilemap_get_at_pixel(tilemap,x,bbox_bottom) > 1) p2 = 0; //ignore bottom side tiles if on a slope.
+	if (p1 == 1) || (p2 == 1) //Inside a tile with collision
+	{
+		if (hsp > 0) x = x - (x mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_right - x);
+		else x = x - (x mod TILE_SIZE) - (bbox_left - x);
+		hsp = 0;
+	}
+	x += hsp;
+	
+	//wall jump
+	onWall = place_meeting(x+1, y, o_wall_jump) - place_meeting(x-1, y, o_wall_jump);
+	
 }
