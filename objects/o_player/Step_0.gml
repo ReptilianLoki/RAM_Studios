@@ -17,6 +17,13 @@ else
 	slide = 0;
 }
 
+//temp health test
+
+if (keyboard_check_pressed(ord("K"))) 
+{
+	global.player_health = global.player_health - 0.25;
+}
+
 #endregion
 
 //Is my middle center touching the floor at the start of this frame?
