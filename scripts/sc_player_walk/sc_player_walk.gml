@@ -1,7 +1,7 @@
 function sc_player_walk()
 {
 	
-	can_boost = true;
+    can_boost = true;
 	sprite_index = s_player_walk;
 	if(image_speed = 0)
 	{
