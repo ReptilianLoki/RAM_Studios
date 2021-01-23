@@ -17,7 +17,7 @@ prev_y = y;
 incline_friction = .93;
 incline_walk_friction = .87;
 decline_friction = 1.02;
-hascontrol = true;
+hascontrol = false;
 incline_check = false; 
 onWall = 0;
 grvWall = 0.1;
@@ -29,6 +29,7 @@ vsp_max_final = MAX_WALK;
 walljumpdelay = 0;
 walljumpdelay_max = 17;
 jumpbuffer = 0;
+grounded = false;
 
 tilemap = layer_tilemap_get_id("Collision");
 
