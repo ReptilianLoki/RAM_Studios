@@ -18,6 +18,7 @@ incline_friction = .93;
 incline_walk_friction = .87;
 decline_friction = 1.02;
 hascontrol = true;
+can_boost = true;
 incline_check = false; 
 onWall = 0;
 grvWall = 0.1;
