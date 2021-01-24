@@ -3,7 +3,7 @@
     "name": "s_player_idle",
     "path": "sprites/s_player_idle/s_player_idle.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
